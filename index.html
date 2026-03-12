@@ -357,6 +357,10 @@
     margin-top: 48px;
   }
 
+  .releases-grid--5 {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+
   @media (max-width: 1024px) {
     .releases-grid { grid-template-columns: repeat(4, 1fr); }
   }
@@ -384,6 +388,24 @@
     object-fit: cover;
     display: block;
     background: var(--dim);
+  }
+
+  .release-cover.contain {
+    object-fit: contain;
+    background: #1a1a1a;
+    padding: 8px;
+  }
+
+  .release-cover.light-bg {
+    object-fit: contain;
+    background: #1a1a1a;
+    padding: 8%;
+  }
+
+  .release-cover.dark-bg {
+    background: #1a1a1a;
+    object-fit: contain;
+    padding: 8px;
   }
 
   .release-info {
@@ -584,7 +606,7 @@
       </a>
       <a href="https://go.protonradio.com/r/rl8_NVAtsBEHU" target="_blank" class="release-card">
         <img src="img/Screenshot_2026-03-10_alle_18_01_29.png" alt="Ter V Sil Remixed LP" class="release-cover">
-        <div class="release-info"><div class="release-title">Ter V Sil Remixed LP<span class="release-year">Mar 2026</span></div><div class="release-label">Art Of Downtempo (RU) · w/ Nada Narcisse, I'm Mady, DJ Fehlt, Zijn, Langard'or</div></div>
+        <div class="release-info"><div class="release-title">Ter V Sil Remixed LP<span class="release-year">Mar 2026</span></div><div class="release-label">Art Of Downtempo (RU) · Nada Narcisse, I'm Mady, DJ Fehlt, Zijn, Langard'or remixes</div></div>
       </a>
       <a href="https://soundcloud.com/kanto_records/sets/der-ak-vo" target="_blank" class="release-card">
         <img src="img/der_ak_vo_cover.png" alt="Der Ak Vo EP" class="release-cover">
@@ -614,7 +636,7 @@
 
     <!-- SINGLES -->
     <p class="section-label fade-in" style="margin-top:60px;color:var(--offwhite);font-size:13px;letter-spacing:3px">Singles</p>
-    <div class="releases-grid fade-in">
+    <div class="releases-grid releases-grid--5 fade-in">
       <a href="https://found.ee/kG5sv" target="_blank" class="release-card">
         <img src="img/pugili_e_epoeti_2-2.jpg" alt="I Pugili e i Poeti" class="release-cover">
         <div class="release-info"><div class="release-title">I Pugili e i Poeti<span class="release-year">2025</span></div><div class="release-label">Archfiend Corp. (MX) · w/ Mel Ferrâr</div></div>
@@ -628,8 +650,8 @@
         <div class="release-info"><div class="release-title">Pranzo d'Estate<span class="release-year">2024</span></div><div class="release-label">Self-release / Octo Records (PT) · w/ Mel Ferrâr</div></div>
       </a>
       <a href="https://tr.ee/BTxbobuop1" target="_blank" class="release-card">
-        <img src="img/weare2DEF.jpg" alt="We Are Sick We Are In Love, We Are Dancing" class="release-cover">
-        <div class="release-info"><div class="release-title">We Are Sick We Are In Love, We Are Dancing<span class="release-year">2024</span></div><div class="release-label">Self-release / Hippies 2.0 (DE) · w/ Frolov</div></div>
+        <img src="img/weare2DEF.jpg" alt="We Are Sick We Are In Love, We Are Dancing" class="release-cover contain">
+        <div class="release-info"><div class="release-title">We Are Sick We Are Dancing<span class="release-year">2024</span></div><div class="release-label">Self-release / Hippies 2.0 (DE) · w/ Frolov</div></div>
       </a>
       <a href="https://found.ee/k6yNG9" target="_blank" class="release-card">
         <img src="img/dolce_vita.png" alt="La Dolce Vita" class="release-cover">
@@ -641,9 +663,6 @@
     <p class="section-label fade-in" style="margin-top:60px;color:var(--offwhite);font-size:13px;letter-spacing:3px">Remix Work</p>
     <div class="section-rule fade-in"></div>
     <div class="remix-grid fade-in">
-      <a href="https://go.protonradio.com/r/rl8_NVAtsBEHU" target="_blank" class="remix-item">
-        <div class="remix-title">Ter V Sil Remixed</div><div class="remix-meta">Art Of Downtempo (RU) · Mar 2026</div>
-      </a>
       <div class="remix-item">
         <div class="remix-title">SiddEffects — Prayana</div><div class="remix-meta">Art Of Downtempo (RU) · 2026</div>
       </div>
