@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 48px 80px;
+    padding: 0 0 80px;
     overflow: hidden;
   }
 
@@ -93,7 +93,10 @@
   .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 700px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 48px;
   }
 
   .hero-label {
@@ -274,7 +277,8 @@
   }
 
   .live-link {
-    margin-top: 32px;
+    margin-top: 0;
+    margin-bottom: 24px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -362,7 +366,7 @@
   }
 
   @media (max-width: 1024px) {
-    .releases-grid { grid-template-columns: repeat(4, 1fr); }
+    .releases-grid { grid-template-columns: repeat(5, 1fr); }
   }
   @media (max-width: 768px) {
     .releases-grid { grid-template-columns: repeat(3, 1fr); }
@@ -526,7 +530,7 @@
   <a href="#home" class="nav-logo">Diereva</a>
   <ul class="nav-links">
     <li><a href="#statement">About</a></li>
-    <li><a href="#statement">Releases</a></li>
+    <li><a href="#releases">Releases</a></li>
     <li><a href="mailto:diereva.musica@gmail.com">Contact</a></li>
   </ul>
 </nav>
@@ -541,7 +545,7 @@
     <p class="hero-tagline">Mycelial Electronic Downtempo &nbsp;·&nbsp; Milan, Italy &nbsp;·&nbsp; Active since 2021</p>
     <p class="hero-bio">Electronic musician and documentary filmmaker. Diereva weaves analogue synthesis, field recordings and live improvisation into cinematic, introspective soundscapes. Releases on independent labels across Russia, Mexico, Turkey, Ukraine, Portugal, Germany and the UK.</p>
     <div class="social-links">
-      <a href="https://diereva.bandcamp.com" target="_blank" class="btn filled">Bandcamp</a>
+      <a href="https://diereva.bandcamp.com" target="_blank" class="btn">Bandcamp</a>
       <a href="https://soundcloud.com/diereva" target="_blank" class="btn">SoundCloud</a>
       <a href="https://open.spotify.com/artist/6hB2IlRyYzq1pxmcXBS5PS" target="_blank" class="btn">Spotify</a>
       <a href="https://linktr.ee/diereva" target="_blank" class="btn">Linktree</a>
@@ -552,21 +556,21 @@
 <!-- ARTIST STATEMENT -->
 <div id="statement">
   <div class="inner">
-    <p class="section-label fade-in">Artist Statement</p>
-    <h2 class="fade-in">Artistic Practice</h2>
+    <h2 class="fade-in">Artistic Statement</h2>
     <div class="section-rule fade-in"></div>
     <div class="statement-grid fade-in">
       <img src="img/masada1.jpg" alt="Diereva live at Masada, Milan" class="statement-photo">
       <div class="statement-text">
-        <p>Diereva is rooted in the idea of music as a living ecosystem: layered, interconnected, and in constant flux. The name itself evokes the structure of a tree, and the project draws on organic field recordings, analogue synthesis, and the unpredictable energy of live improvisation.        <p>The music moves through the territories of organic downtempo — shifting between ambient drifts and tighter rhythms — while maintaining a consistently tactile and cinematic character. Every track is born from physical materials: sounds captured in real environments or extracted from film, then processed through analogue hardware and shaped in real time. This duality, ranging from the exploration of live sets to the precision of studio composition, is the very soul of Diereva.</p>
-        <p>This approach to sound is inseparable from Gigi’s career as a documentary filmmaker. Specialising in social documentaries and mountain cinema, with fieldwork in Mauritania, Benin, Brazil, and Ethiopia (often involving music-related research), he brings to his productions a practice of "deep listening" and a visual sensibility matured in remote human environments.</p>
-  <p>However, his connection to music has much deeper roots: it began with the study of the violin at the age of four, followed by the electric bass in his teens, exploring genres far removed from electronic music for decades. It was only around the age of 40 that he encountered synthesizers and machines; the Diereva project was born from this collision between acoustic rigour and new digital possibilities.</p>
+        <p>Diereva is rooted in the idea of music as a living ecosystem: layered, interconnected, and in constant flux. The name itself evokes the structure of a tree, and the project draws on organic field recordings, analogue synthesis, and the unpredictable energy of live improvisation.</p>
+        <p>The music moves through the territories of organic downtempo — shifting between ambient drifts and tighter rhythms — while maintaining a consistently tactile and cinematic character. Every track is born from physical materials: sounds captured in real environments or extracted from film, then processed through analogue hardware and shaped in real time. This duality, ranging from the exploration of live sets to the precision of studio composition, is the very soul of Diereva.</p>
+        <p>This approach to sound is inseparable from Gigi's career as a documentary filmmaker. Specialising in social documentaries and mountain cinema, with fieldwork in Mauritania, Benin, Brazil, and Ethiopia (often involving music-related research), he brings to his productions a practice of "deep listening" and a visual sensibility matured in remote human environments.</p>
+        <p>However, his connection to music has much deeper roots: it began with the study of the violin at the age of four, followed by the electric bass in his teens, exploring genres far removed from electronic music for decades. It was only around the age of 40 that he encountered synthesizers and machines; the Diereva project was born from this collision between acoustic rigour and new digital possibilities.</p>
       </div>
     </div>
 
     <!-- RELEASES -->
-    <p class="section-label fade-in" style="margin-top:80px">Discography</p>
-    <h2 class="fade-in">Releases</h2>
+    <div id="releases">
+    <h2 class="fade-in" style="margin-top:80px">Discography</h2>
     <div class="section-rule fade-in"></div>
 
     <!-- EP & LP -->
@@ -695,9 +699,10 @@
       </div>
     </div>
   </div>
+  <div class="inner">
     <!-- LIVE SETS -->
-    <p class="section-label fade-in" style="margin-top:80px">Performance</p>
-    <h2 class="fade-in">Main Live Sets</h2>
+    <h2 class="fade-in" style="margin-top:80px">Main Live Sets</h2>
+    <a href="https://soundcloud.com/diereva/sets/live?si=dc146ab4a25c4be7ae28aef3a5dc72fe" target="_blank" class="live-link fade-in">▶ Listen to live sets on SoundCloud →</a>
     <div class="section-rule fade-in"></div>
     <div class="live-grid fade-in">
       <div class="live-item">
@@ -712,15 +717,17 @@
       <div class="live-item">
         <div><div class="live-venue">Masada</div><div class="live-loc">Milan, Italy</div></div>
       </div>
+      <div class="live-item">
+        <div><div class="live-venue">Tanzfreunde</div><div class="live-loc">Germany</div></div>
+      </div>
       <div class="live-item" style="border-bottom:none">
         <div><div class="live-venue">Sunfish / K-Pax</div><div class="live-loc">Lago Maggiore</div></div>
       </div>
     </div>
-    <a href="https://soundcloud.com/diereva/sets/live?si=dc146ab4a25c4be7ae28aef3a5dc72fe" target="_blank" class="live-link fade-in">▶ Listen to live sets on SoundCloud →</a>
 
     <!-- SETUP -->
     <p class="section-label fade-in" style="margin-top:80px">Technical</p>
-    <h2 class="fade-in">Setup</h2>
+    <h2 class="fade-in">Live Setup</h2>
     <div class="section-rule fade-in"></div>
     <div class="setup-grid fade-in">
       <div class="setup-item"><div class="setup-key">Software</div><div class="setup-val">Ableton Live</div></div>
@@ -744,7 +751,8 @@
       <div class="country-item"><div class="country-name">Portugal</div><div class="country-label">Octo Records</div></div>
       <div class="country-item"><div class="country-name">Greece</div><div class="country-label">Shango Records</div></div>
       <div class="country-item"><div class="country-name">China</div><div class="country-label">Autumn Equinox</div></div>
-
+    </div>
+  </div>
 </div>
 
 <!-- FOOTER -->
